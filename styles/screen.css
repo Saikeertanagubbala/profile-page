@@ -1,50 +1,109 @@
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
-}
-
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
+    font-family: Arial, sans-serif;
+    background-color: #BABDE2;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    list-style-type: none;
+header {
+    background-color: #FFFCF5;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.profile-info h1 {
     margin: 0;
 }
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
     text-decoration: none;
-    font-size: 1.2em;
+    color: #333;
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+nav ul li a:hover {
+    color: #2358bc; 
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.follower-count {
+    background-color: #FFFCF5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-img.about {
-    opacity: 0.5;
+.profile-box {
+    background-color: #FFFCF5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.bio h2,
+.contacts h2,
+.activity-box h2,
+.portfolio-box h2 {
+    margin-top: 0;
+}
+
+.contacts ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.contacts li {
+    margin-bottom: 10px;
+}
+
+.activity-categories,
+.portfolio-categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activity-category,
+.portfolio-category {
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.activity-category a,
+.portfolio-category a {
+    text-decoration: none;
+    color: #333;
+}
+
+.activity-category:hover,
+.portfolio-category:hover {
+    background-color: #f0f0f0;
 }
